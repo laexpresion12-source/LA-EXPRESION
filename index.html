@@ -103,9 +103,9 @@
 
         .logo {
             width:260px;
-    max-width:100%;
-    height:auto;
-}
+            max-width:100%;
+            height:auto;
+        }
         
 
         .tagline {
@@ -174,67 +174,98 @@
         .pisado {
             color: white;
         }
+        /* SIDEBAR EN COLUMNA */
+        aside{
+            display:flex;
+            flex-direction:column;
+            gap:20px;
+        }
+        
+        /* BLOQUE RADIO */
+        .radio-box{
+            background:#0E1116;
+            color:white;
+            border-radius:10px;
+            padding:15px;
+            text-align:center;
+            margin:10px auto ;
+        }
+        
+        .radio-icon{
+            font-size:5rem;
+            margin-bottom:10px;
+        }
+        
+        .radio-box h3{
+            margin:0 0 10px;
+            color:var(--azul-claro);
+        }
+        
+        .radio-box audio{
+            width:100%;
+            margin-top:10px;
+        }
         @media (max-width: 768px){
 
-    /* header */
-    .logo{
-        width:260px;
-       max-width:100%;
-       height:auto;
-}
-    }
-
-    /* menú */
-    nav{
-        padding:12px;
-    }
-
-    nav ul{
-        flex-wrap:wrap;
-        gap:15px;
-        justify-content:center;
-    }
-
-    nav a{
-        font-size:.9rem;
-    }
-
-    /* contenido principal */
-    .contenido{
-        grid-template-columns:1fr;
-        gap:20px;
-    }
-
-    main{
-        padding:10px;
-    }
-
-    article,
-    aside{
-        margin:0;
-        padding:15px;
-    }
-
-    /* títulos */
-    h1{
-        font-size:1.8rem;
-    }
-
-    h2{
-        font-size:1.4rem;
-    }
-
-    /* imágenes */
-    img{
-        width:100%;
-        max-width:100%;
-        height:auto;
-    }
-    .meta {
-            color: gray;
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-        }
+          /* header */
+          .logo{
+              width:260px;
+             max-width:100%;
+             height:auto;
+          }
+          }
+      
+          /* menú */
+          nav{
+              padding:12px;
+          }
+      
+          nav ul{
+              flex-wrap:wrap;
+              gap:15px;
+              justify-content:center;
+          }
+      
+          nav a{
+              font-size:.9rem;
+          }
+      
+          /* contenido principal */
+          .contenido{
+              grid-template-columns:1fr;
+              gap:20px;
+          }
+      
+          main{
+              padding:10px;
+          }
+      
+          article,
+          aside{
+              margin:0;
+              padding:15px;
+          }
+      
+          /* títulos */
+          h1{
+              font-size:1.8rem;
+          }
+      
+          h2{
+              font-size:1.4rem;
+          }
+      
+          /* imágenes */
+          img{
+              width:100%;
+              max-width:100%;
+              height:auto;
+          }
+          .meta {
+                  color: gray;
+                  font-size: 0.9rem;
+                  margin-bottom: 20px;
+              }
 
 
     </style>
@@ -268,6 +299,18 @@
 
             <!-- COLUMNA PRINCIPAL -->
             <div>
+                <div class="radio-box">
+                 
+                         <div class="radio-icon">📻</div>
+                 
+                         <h3>Entrevista Exclusiva</h3>
+                                  
+                         <audio controls>
+                             <source src="entrevista.mp3" type="audio/mpeg">
+                         
+                          </audio>
+                 
+                 </div>
 
                 <!-- AQUI VA EL ARTICULO PRINCIPAL -->
                 <article>
@@ -288,9 +331,11 @@
                 </article>
 
             </div>
+              
 
             <!-- SIDEBAR -->
             <aside>
+                  
                 <!-- AQUI VA CONTENIDO SECUNDARIO -->
                 <h3>Aumentan los conflictos entre EE. UU e Irán</h3>
                 
